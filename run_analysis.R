@@ -1,7 +1,8 @@
 
 
 
-##downloads and unzips in a folder called "data" in the working directory.
+##downloads and unzips in a folder called "data" in the working directory, 
+##if the zip file is not already in the working directory.
 
 if(!file.exists("./getdata_projectfiles_UCI HAR Dataset.zip")){
         download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
