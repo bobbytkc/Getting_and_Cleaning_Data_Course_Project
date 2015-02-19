@@ -1,7 +1,13 @@
 
+
+
 ##downloads and unzips in a folder called "data" in the working directory.
-download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip","./data.zip")
-unzip("./data.zip", exdir = "./data")
+
+if(!file.exists("./getdata_projectfiles_UCI HAR Dataset.zip")){
+        download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+                      ,"./getdata_projectfiles_UCI HAR Dataset.zip")
+}
+unzip("./getdata_projectfiles_UCI HAR Dataset.zip", exdir = "./data")
 
 ##Variables storing directory information of the relevant data in the "./data" folder
 dataDir <- "./data/UCI HAR Dataset"
