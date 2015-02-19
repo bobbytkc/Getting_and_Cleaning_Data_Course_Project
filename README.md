@@ -13,7 +13,7 @@ See Codewords.MD for more details regarding the variables.
 
 The script does the following:
 
-* Downloads the zip file to the working directory if it doesn't find it.
+* Downloads the zip file to the working directory if it doesn't find it there already. Alternatively, download the zip file above and place it in your working directory to skip this.
 * Unzips the data into the folder "./data"
 * Reads the test and training data sets into R
 * Merges the training and the test sets to create one data set.
